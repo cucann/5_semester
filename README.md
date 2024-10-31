@@ -7,4 +7,5 @@
 -[Отчет](4_лаб.pdf)
 
 **Лабораторная работа 1**  
+-[Отчет Word](1lb_raspsys_off.pdf)  
 -[ipynb_workwithdata](https://github.com/cucann/5_semester/blob/main/work_with_data_2024_ind.ipynb)  
