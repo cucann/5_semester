@@ -6,5 +6,5 @@
 
 -[Отчет](4_лаб.pdf)
 
-**Лабораторная работа 1**
--[ipynb_workwithdata](https://github.com/cucann/5_semester/blob/main/work_with_data_2024_ind.ipynb)
+**Лабораторная работа 1**  
+-[ipynb_workwithdata](https://github.com/cucann/5_semester/blob/main/work_with_data_2024_ind.ipynb)  
