@@ -11,6 +11,6 @@
 -[ipynb_workwithdata](https://github.com/cucann/5_semester/blob/main/work_with_data_2024_ind.ipynb)  
 
 **js lab2**  
--[1task](indt1.js)  
--[2task](indt2.js)  
--[3task](indt3.js)  
+-[1task](indtsk1.js)  
+-[2task](indtsk2.js)  
+-[3task](indtsk3.js)  
