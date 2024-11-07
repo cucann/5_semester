@@ -16,6 +16,6 @@
 -[3task](indtsk3.js)  
 
 **js lab3**  
--[1task](indt1.js.js)  
--[2task](indt2.js.js)  
--[3task](indt3.js.js)  
+-[1task](indt1.js)  
+-[2task](indt2.js)  
+-[3task](indt3.js)  
