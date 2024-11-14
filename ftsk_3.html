@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игра "Мемори"</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Игра "Мемори"</h2>
+<p>Найдите пару одинаковых карт! Игровые карты - буквы от A до D </p>
+
+
+<div id="game-board" class="game-board"></div>
+
+<script>
+  const cards = ['A', 'B', 'C', 'D', 'A', 'B', 'C', 'D']; 
+  let flippedCards = []; 
+  let matchedCards = 0;
+
+
+  function shuffle(array) {
+    return array.sort(() => Math.random() - 0.5);
+  }
+
+  shuffle(cards);
+
+  const board = document.getElementById("game-board");
+
+  cards.forEach((card, index) => {
+    const cardElement = document.createElement("div");
+    cardElement.classList.add("card");
+    cardElement.dataset.cardValue = card;
+    cardElement.textContent = '?';
+
+    cardElement.addEventListener("click", () => flipCard(cardElement));
+    board.appendChild(cardElement);
+  });
+
+  function flipCard(cardElement) {
+    if (cardElement.textContent === '?' && flippedCards.length < 2) {
+      cardElement.textContent = cardElement.dataset.cardValue; 
+      flippedCards.push(cardElement);
+
+      
+      if (flippedCards.length === 2) {
+        setTimeout(checkMatch, 1000); 
+      }
+    }
+  }
+
+
+  function checkMatch() {
+    const [firstCard, secondCard] = flippedCards;
+
+    if (firstCard.textContent === secondCard.textContent) {
+      matchedCards += 2;
+      if (matchedCards === cards.length) {
+        alert("Поздравляем! Вы выиграли!");
+      }
+    } else {
+      firstCard.textContent = '?';
+      secondCard.textContent = '?';
+    }
+    flippedCards = [];
+  }
+</script>
+
+</body>
+</html>

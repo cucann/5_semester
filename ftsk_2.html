@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Редактор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Редактор Markdown с предпросмотром</h2>
+
+<textarea id="editor" placeholder="Введите что-то здесь..."></textarea>
+
+<div id="preview"></div>
+
+<script>
+
+  function convertMarkdownToHTML(markdown) {
+    let html = markdown;
+
+    html = html.replace(/### (.*?)\n/g, '<h3>$1</h3>');
+    html = html.replace(/## (.*?)\n/g, '<h2>$1</h2>');
+    html = html.replace(/# (.*?)\n/g, '<h1>$1</h1>');
+
+    
+    html = html.replace(/\n/g, '<br>');
+    html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
+    return html;
+  }
+
+  document.getElementById('editor').addEventListener('input', function() {
+    const markdownText = this.value;
+    const preview = document.getElementById('preview');
+    preview.innerHTML = convertMarkdownToHTML(markdownText); // Обновляем предпросмотр
+  });
+</script>
+
+</body>
+</html>
