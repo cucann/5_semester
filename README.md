@@ -21,6 +21,6 @@
 -[3task](indt3.js)  
 
 **js lab4**  
--[1task](ftsk_1.html)  
--[2task](ftsk_2.html)  
--[3task](ftsk_3.html)  
+-[1task](/task_1)  
+-[2task](/task_2)  
+-[3task](/task_3)  
