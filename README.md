@@ -16,6 +16,8 @@
 -[3task](indtsk3.js)  
 
 **js lab3**  
+-[индивидуальное (про треугольник Паскаля и его коэффициенты](zadanie.js)  
+
 -[1task](indt1.js)  
 -[2task](indt2.js)  
 -[3task](indt3.js)  
@@ -24,3 +26,4 @@
 -[1task](/task_1)  
 -[2task](/task_2)  
 -[3task](/task_3)  
+
