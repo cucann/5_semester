@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню ресторана</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Меню нашего ресторана</h1>
+        <nav>
+            <button class="filter-btn" data-category="все">Все</button>
+            <button class="filter-btn" data-category="напитки">Напитки</button>
+            <button class="filter-btn" data-category="супы">Супы</button>
+            <button class="filter-btn" data-category="десерты">Десерты</button>
+            <button class="filter-btn" data-category="салаты">Салаты</button>
+            <button class="filter-btn" data-category="горячее">Горячее</button>
+        </nav>
+    </header>
+    <main>
+        <ul id="menu-list">
+            <!-- Напитки -->
+            <li data-category="напитки">
+                <img src="images/tea.jpg" alt="Чай">
+                <h3>Чай</h3>
+                <p>Ароматный черный или зеленый чай</p>
+            </li>
+            <li data-category="напитки">
+                <img src="images/coffee.jpg" alt="Кофе">
+                <h3>Кофе</h3>
+                <p>Эспрессо, капучино или латте</p>
+            </li>
+            <li data-category="напитки">
+                <img src="images/juice.jpg" alt="Сок">
+                <h3>Сок</h3>
+                <p>Свежевыжатый апельсиновый или яблочный сок</p>
+            </li>
+
+            <!-- Супы -->
+            <li data-category="супы">
+                <img src="images/soup.jpg" alt="Суп">
+                <h3>Суп</h3>
+                <p>Традиционный суп с овощами и мясом</p>
+            </li>
+            <li data-category="супы">
+                <img src="images/borscht.jpg" alt="Борщ">
+                <h3>Борщ</h3>
+                <p>Классический борщ с пампушками</p>
+            </li>
+
+            <!-- Десерты -->
+            <li data-category="десерты">
+                <img src="images/cake.jpg" alt="Торт">
+                <h3>Торт</h3>
+                <p>Шоколадный торт с кремом</p>
+            </li>
+            <li data-category="десерты">
+                <img src="images/icecream.jpeg" alt="Мороженое">
+                <h3>Мороженое</h3>
+                <p>Ванильное, клубничное или шоколадное мороженое</p>
+            </li>
+
+            <!-- Салаты -->
+            <li data-category="салаты">
+                <img src="images/caesar.jpg" alt="Цезарь">
+                <h3>Цезарь</h3>
+                <p>Салат с курицей, сухариками и соусом</p>
+            </li>
+            <li data-category="салаты">
+                <img src="images/greek.jpg" alt="Греческий">
+                <h3>Греческий</h3>
+                <p>Овощной салат с сыром фета</p>
+            </li>
+
+            <!-- Горячее -->
+            <li data-category="горячее">
+                <img src="images/steak.jpg" alt="Стейк">
+                <h3>Стейк</h3>
+                <p>Сочный стейк из мраморной говядины</p>
+            </li>
+            <li data-category="горячее">
+                <img src="images/pasta.jpg" alt="Паста">
+                <h3>Паста</h3>
+                <p>Паста с соусом песто или томатным соусом</p>
+            </li>
+        </ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
